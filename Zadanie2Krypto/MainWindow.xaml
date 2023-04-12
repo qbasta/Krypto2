@@ -1,0 +1,34 @@
+﻿<Window x:Class="Zadanie2Krypto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie2Krypto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Seed:" Margin="10"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="SeedTextBox" TextWrapping="Wrap" Text="" Margin="5"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Taps:" Margin="10"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="TapsTextBox"  TextWrapping="Wrap" Text="" Margin="5"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Text:" Margin="10"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="StringTextBox" TextWrapping="Wrap" Text="" Margin="5"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="Encrypt/Decrypt" Click="Button_Click" Margin="10"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Encryption:" Margin="10"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="TextBoxOut1" TextWrapping="Wrap" Text="" Margin="0,10,405,10" FontFamily="Consolas" FontSize="14"/>
+        <Label Grid.Row="4" Grid.Column="1" Content="Decryption:" Margin="311,10,327,10"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="TextBoxOut2" TextWrapping="Wrap" Text="" Margin="384,10,20,10" FontFamily="Consolas" FontSize="14"/>
+    </Grid>
+</Window>
